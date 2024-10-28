@@ -20,7 +20,7 @@ export function Hero() {
         <div className="text-3xl md:text-7xl font-bold text-purple-500 dark:text-purple-500 text-center">
           StarkAudit is a decentralized platform to audit your starknet smart contract using AI
         </div>
-        <div className="font-extralight text-base md:text-4xl text-purple-500 dark:text-purple-500 py-4">
+        <div className="font-extralight text-base md:text-4xl text-white dark:text-white py-4">
           Audit your smart contract to improve your smart contract performance
         </div>
         <button className="bg-black dark:bg-white rounded-full w-fit text-white dark:text-black px-4 py-2">
