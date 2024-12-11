@@ -1,4 +1,6 @@
 import React from 'react'
+import ConnectButton from "./ui/ConnectButton"
+import StarkNetConnectButton from "./StarkNetConnectButton"
 
 
 
@@ -55,7 +57,9 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end">
-    <a className="btn">Connect</a>
+    {/* <a className="btn">Connect</a>
+     */}
+     <StarkNetConnectButton />
   </div>
 </div>
     </div>

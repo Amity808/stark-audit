@@ -7,6 +7,7 @@ pub trait IStarkAudit<TContractState> {
     fn get_auditresponse(self: @TContractState, contractResponse: felt252) -> felt252;
     fn get_contract(self: @TContractState, contract: felt252) -> felt252;
     fn get_owner(self: @TContractState) -> ContractAddress;
+    fn get_balance(self: @TContractState) -> felt252;
 }
 
 #[starknet::contract]
@@ -18,7 +19,8 @@ mod HelloStarknet {
     struct Storage {
         contractResponse: felt252, 
         contract: felt252,
-        owner: ContractAddress
+        owner: ContractAddress,
+        balance: felt252
     }
 
     #[abi(embed_v0)]

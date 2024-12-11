@@ -10,6 +10,8 @@ import {
   useInjectedConnectors,
   voyager
 } from "@starknet-react/core";
+import { http, WagmiProvider, createConfig } from "wagmi";
+
  
 export function StarknetProvider({ children }: { children: React.ReactNode }) {
   const { connectors } = useInjectedConnectors({
